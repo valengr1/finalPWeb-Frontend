@@ -101,7 +101,7 @@
 .addBook{
   list-style: none;
   text-decoration: none;
-  width: 82px;
+  width: 120px;
 }
 
 .addBookBtn{
@@ -125,6 +125,11 @@
   text-decoration: none;
 }
 
+.pCantidadLibros{
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
 
 /*Cuerpo*/
 
@@ -300,6 +305,10 @@ tr:hover{
     height: 100%;
   }
 
+  .addBook{
+    width: 140px;
+  }
+
   .section{
     display: none;
   }
@@ -309,4 +318,6 @@ tr:hover{
     grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
     gap: 10px;
   }
+
+  
 }

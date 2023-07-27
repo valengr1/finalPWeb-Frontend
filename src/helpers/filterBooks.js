@@ -1,6 +1,11 @@
-export function bookFilters(searchByTitle, searchByCategory, books) {
+export function bookFilters(
+  searchByTitle,
+  searchByAuthor,
+  searchByCategory,
+  books
+) {
   var results = [];
-  if (!searchByTitle && !searchByCategory) {
+  if (!searchByTitle && !searchByCategory && !searchByAuthor) {
     results = books;
   } else if (searchByTitle) {
     results = books.filter((elemento) => {
@@ -20,6 +25,17 @@ export function bookFilters(searchByTitle, searchByCategory, books) {
           .toString()
           .toLowerCase()
           .includes(searchByCategory.toLowerCase())
+      ) {
+        return elemento;
+      }
+    });
+  } else if (searchByAuthor) {
+    results = books.filter((elemento) => {
+      if (
+        elemento.autor
+          .toString()
+          .toLowerCase()
+          .includes(searchByAuthor.toLowerCase())
       ) {
         return elemento;
       }

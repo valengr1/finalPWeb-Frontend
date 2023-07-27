@@ -9,16 +9,25 @@ import { elimination } from "../helpers/elimination";
 function Books() {
   const [searchByTitle, setSearchByTitle] = useState("");
   const [searchByCategory, setSearchByCategory] = useState("");
+  const [searchByAuthor, setSearchByAuthor] = useState("");
   const { books, categories, setIsUpdate } = BooksCategories();
 
-  var results = bookFilters(searchByTitle, searchByCategory, books);
-
+  var results = bookFilters(
+    searchByTitle,
+    searchByAuthor,
+    searchByCategory,
+    books
+  );
   const handleDelete = (id) => {
     elimination(id, setIsUpdate);
   };
 
   const handleTitleChange = (e) => {
     setSearchByTitle(e.target.value);
+  };
+
+  const handleAuthorChange = (e) => {
+    setSearchByAuthor(e.target.value);
   };
 
   const handleCategoryChange = (e) => {
@@ -40,8 +49,17 @@ function Books() {
                 <input
                   type="text"
                   className={styles.nameInput}
-                  placeholder="Busqueda"
+                  placeholder="Titulo"
                   onChange={handleTitleChange}
+                  name="searchByTitle"
+                />
+              </li>
+              <li className={styles.name}>
+                <input
+                  type="text"
+                  className={styles.nameInput}
+                  placeholder="Autor"
+                  onChange={handleAuthorChange}
                   name="searchByTitle"
                 />
               </li>
@@ -53,7 +71,7 @@ function Books() {
                   className={styles.categorySelect}
                 >
                   <option className={styles.option} value="">
-                    Todos
+                    All
                   </option>
                   {categories.map((category) => (
                     <option
@@ -74,6 +92,7 @@ function Books() {
                 </Link>
               </li>
             </ul>
+            <p className={styles.pCantidadLibros}>{results.length}</p>
           </nav>
         </header>
         <main className={styles.main}>

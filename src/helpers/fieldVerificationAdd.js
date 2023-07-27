@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import axios from "axios";
+import { postBook } from "../services/postBook";
 
 export async function fieldVerificationAdd(book, setBook, navigate) {
   if (!book.autor || !book.edicion || !book.idCategoria || !book.titulo) {
@@ -10,13 +10,7 @@ export async function fieldVerificationAdd(book, setBook, navigate) {
       confirmButtonText: "Aceptar",
     });
   } else {
-    const data = {
-      titulo: book.titulo,
-      edicion: book.edicion,
-      autor: book.autor,
-      idCategoria: book.idCategoria,
-    };
-    await axios.post("http://localhost:9000/api/v1/books", data);
+    postBook(book);
     setBook({
       titulo: "",
       edicion: 0,

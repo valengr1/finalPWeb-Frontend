@@ -63,13 +63,6 @@
   scale: 1.05;
 }
 
-.a{
-  text-decoration: none;
-  color: white;
-  display: block;
-  margin-top: 2px;
-}
-
 .main{
   height: calc(100vh - 70px);
   display: flex;

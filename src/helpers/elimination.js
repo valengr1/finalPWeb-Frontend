@@ -1,5 +1,5 @@
 import Swal from "sweetalert2";
-import axios from "axios";
+import { deleteBook } from "../services/deleteBook";
 
 export async function elimination(id, setIsUpdate) {
   Swal.fire({
@@ -13,7 +13,7 @@ export async function elimination(id, setIsUpdate) {
     confirmButtonText: "Si, eliminalo",
   }).then(async (result) => {
     if (result.isConfirmed) {
-      await axios.delete("http://localhost:9000/api/v1/books/" + id);
+      deleteBook(id);
       Swal.fire("Eliminado!", "El libro fue eliminado", "success");
       setIsUpdate(true);
     }

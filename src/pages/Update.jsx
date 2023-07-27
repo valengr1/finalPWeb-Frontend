@@ -3,7 +3,7 @@ import styles from "./../styles/Update.module.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import { fieldVerificationUpdate } from "../helpers/fieldVerificationUpdate";
-import { BooksCategories } from "../hooks/BooksCategories";
+import BooksCategories from "../hooks/BooksCategories";
 
 function Update() {
   const [book, setBook] = useState({

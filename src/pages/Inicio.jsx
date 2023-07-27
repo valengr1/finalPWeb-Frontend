@@ -11,17 +11,15 @@ function Inicio() {
             <li className={styles.li}>
               <ul className={styles.ul}>KeepBook</ul>
               <ul className={styles.ulBtn}>
-                <a className={styles.a}>
-                  <Link
-                    to={"/books"}
-                    style={{
-                      color: "white",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Mis libros
-                  </Link>
-                </a>
+                <Link
+                  to={"/books"}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                  }}
+                >
+                  Mis libros
+                </Link>
               </ul>
             </li>
           </nav>
