@@ -1,0 +1,312 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  background-image: url("./../../Backiee/backiee-119980.jpg");
+  background-position: center;
+  background-size: cover;
+   font: ‘Roboto’, Arial, Helvetica, sans-serif;
+}
+
+.body:focus:not(:focus-visible){
+  outline: none;
+}
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(237, 234, 234, 0.4);
+  backdrop-filter: blur(7px);
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+  height: 60px;
+}
+
+.brandName{
+  width: 30px;
+  padding-left: 3px;
+  color: black;
+}
+
+.brandName:hover{
+  scale: 1.04;
+}
+
+.nameLink{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.lookingFor{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  height: 35px;
+}
+
+.name{
+  width: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nameInput{
+  width: 100%;
+  border-radius: 15px;
+  background:  rgba(237, 234, 234, 0.5);
+  height: 30px;
+  font-size: 16px;
+  padding-left: 10px;
+  border: none;
+}
+
+.nameInput::placeholder{
+  color: white;
+  font-weight: 400;
+}
+
+.category{
+  width: 100%;
+  list-style: none;
+}
+
+.categorySelect{
+  width: 100%;
+  border-radius: 15px;
+  height: 29px;
+  color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+  background:  rgba(237, 234, 234, 0.5);
+  border: none;
+  padding-left: 5px;
+}
+
+.addBook{
+  list-style: none;
+  text-decoration: none;
+  width: 82px;
+}
+
+.addBookBtn{
+  width: 100%;
+  border-radius: 50%;
+  background-color:  rgba(237, 234, 234, 0.5);
+  height: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: none;
+
+}
+
+.addBookBtn:hover{
+  scale: 1.04;
+  padding-top: 1.4px;
+}
+
+.addLink{
+  color: white;
+  text-decoration: none;
+}
+
+
+/*Cuerpo*/
+
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section{
+  overflow: scroll;
+  width: 100%;
+  height: 100vh;
+}
+
+.section::-webkit-scrollbar{
+  display: none;
+}
+
+.table{
+  width: 100%;
+  border-radius: 15px;
+}
+
+
+.thead{
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(7px);
+  height: 40px;
+  text-align: center;
+  font-size: 1.4rem;
+  border-radius: 14px;
+}
+
+tbody{
+  background: rgba(255, 255, 255,0.2);
+  backdrop-filter: blur(7px);
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+tr:hover{
+  background-color: rgba(237, 234, 234, 0.4)
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnModificar{
+  background:  rgba(237, 234, 234, 0.158);
+  width: 60%;
+  height: 25px;
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btnModificar:hover{
+  scale: 1.04;
+}
+
+.btnEliminar{
+  background:  rgba(237, 14, 14, 0.45);
+  height: 25px;
+  width: 60%;
+  margin-top: 4px;
+  font-size: 1rem;
+  border-radius: 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.btnEliminar:hover{
+  scale: 1.04;
+}
+
+/*Cards*/
+
+.cardBox{
+  width: 100%;
+  margin-top: 10px;
+  display: none;
+  height: calc(100vh - 70px);
+  overflow-y:auto;
+}
+
+.cardBox::-webkit-scrollbar{
+  display: none;
+}
+
+.card{
+  background: rgba(237, 234, 234, 0.4);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  height: 300px;
+}
+
+.cardTitulo{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.cardAutor{
+  margin-left: 20%;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.cardEdicion{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20%;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.cardCategoria{
+  margin-top: 5px;
+  margin-left: 20%;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.cardButtons{
+  text-align: center;
+}
+
+.cardBtnModificar{
+    background:  rgba(237, 234, 234, 0.158);
+    width: 60%;
+    height: 25px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  
+.cardBtnModificar:hover{
+    scale: 1.04;
+}
+
+.cardBtnEliminar{
+  background:  rgba(248, 4, 4, 0.454);
+  width: 60%;
+  height: 25px;
+  border-radius: 14px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+    font-weight: 100;
+}
+
+.cardBtnEliminar:hover{
+  scale: 1.04;
+}
+
+
+
+@media (max-width: 768px){
+  .body{
+    height: 100%;
+  }
+
+  .section{
+    display: none;
+  }
+
+  .cardBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
+    gap: 10px;
+  }
+}
