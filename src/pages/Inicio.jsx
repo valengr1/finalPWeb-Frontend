@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 
 function Inicio() {
   return (
-    <Fade duration={2500}>
+    <Fade duration={1500}>
       <div className={styles.body}>
         <header className={styles.header}>
           <nav className={styles.nav}>
@@ -30,21 +30,21 @@ function Inicio() {
               <p className={styles.p}>
                 Tal vez los sueños corren porque no dejamos de perseguirlos.
               </p>
-              <p className={styles.p}>- Las almas de Brandon.</p>
+              <p className={styles.pLibro}>- Las almas de Brandon.</p>
             </article>
             <article className={styles.article}>
               <p className={styles.p}>
                 Todo cambio es duro al principio, desordenado a la mitad y
                 precioso al final.
               </p>
-              <p className={styles.p}>- El club de las 5 de la mañana</p>
+              <p className={styles.pLibro}>- El club de las 5 de la mañana</p>
             </article>
             <article className={styles.article}>
               <p className={styles.p}>
                 Lo único que nos da miedo cuando nos asomamos a la muerte o a la
                 oscuridad, es lo desconocido
               </p>
-              <p className={styles.p}>- Harry Potter</p>
+              <p className={styles.pLibro}>- Harry Potter</p>
             </article>
           </section>
         </main>

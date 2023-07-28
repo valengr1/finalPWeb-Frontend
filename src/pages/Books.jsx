@@ -35,7 +35,7 @@ function Books() {
   };
 
   return (
-    <Fade duration={2500}>
+    <Fade duration={1500}>
       <div className={styles.body}>
         <header className={styles.header}>
           <nav className={styles.nav}>
@@ -86,9 +86,7 @@ function Books() {
               </li>
               <li className={styles.addBook}>
                 <Link to={"/add"} className={styles.addLink}>
-                  <button className={styles.addBookBtn}>
-                    <i className="fa-solid fa-plus"></i>
-                  </button>
+                  <button className={styles.addBookBtn}>+</button>
                 </Link>
               </li>
             </ul>
@@ -96,51 +94,6 @@ function Books() {
           </nav>
         </header>
         <main className={styles.main}>
-          <section className={styles.section}>
-            <table className={styles.table}>
-              <thead className={styles.thead}>
-                <tr className={styles.tr}>
-                  <td>Titulo</td>
-                  <td>Autor</td>
-                  <td>Edicion</td>
-                  <td>Categoria</td>
-                  <td>Modificar/Eliminar</td>
-                </tr>
-              </thead>
-              <tbody>
-                {results.map((book) => (
-                  <tr key={book.id}>
-                    <td>{book.titulo}</td>
-                    <td>{book.autor}</td>
-                    <td>{book.edicion}</td>
-                    <td>{book.categoria}</td>
-                    <td>
-                      <Link
-                        className={styles.addLink}
-                        to={"/update/" + book.id}
-                      >
-                        <div className={styles.btn}>
-                          <button className={styles.btnModificar}>
-                            Modificar
-                          </button>
-                        </div>
-                      </Link>
-                      <div className={styles.btn}>
-                        <button
-                          onClick={() => {
-                            handleDelete(book.id);
-                          }}
-                          className={styles.btnEliminar}
-                        >
-                          Eliminar
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </section>
           <section className={styles.cardBox}>
             {results.map((book) => (
               <div key={book.id} className={styles.card}>

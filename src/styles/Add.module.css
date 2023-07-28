@@ -1,5 +1,5 @@
 .body{
-  background: url(/Backiee/backiee-119980.jpg);
+  background: url(/Backiee/backiee-179984.jpg);
   background-position: center;
   background-size: cover  ;
   height: 100vh;
@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   font: ‘Roboto’, Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 .main{
@@ -23,6 +24,8 @@
   font-size: 1.8rem;
   font-weight: 100;
   font-style: italic;
+  text-shadow: 0 0 5px #e3e4e5, 0 0 10px #e3e4e5, 0 0 20px #e3e4e5
+
 }
 
 .formIn{
@@ -37,9 +40,10 @@
 .form{
   height: 100%;
   width: 100% ;
-  background-color: rgba(255,255,255,0.4);
+  background-color: rgba(159, 157, 157, 0.4);
   backdrop-filter: blur(7px);
   border-radius: 20px ;
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 
 .tituloBox{
@@ -66,6 +70,14 @@
   width: 200px;
   padding-left: 10px;
   font-size: 1.2rem;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  transition: border 0.3s ease-in-out;
+}
+
+.tituloInput:focus{
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .autorBox{
@@ -93,7 +105,14 @@
   width: 200px;
   padding-left: 10px;
   font-size: 1.2rem;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  transition: border 0.3s ease-in-out;
+}
 
+.autorInput:focus{
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .edicionBox{
@@ -120,7 +139,15 @@
   width: 200px;
   padding-left: 10px;
   font-size: 1.2rem;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+  transition: border 0.3s ease-in-out;
+}
 
+
+.edicionInput:focus{
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .categoriaBox{
@@ -144,12 +171,22 @@
   position: absolute;
   margin-left: 115px;
   border-radius: 14px;
-  background: rgba(19, 18, 18, 0.6);
+  background: rgba(41, 0, 128,0.6);
   text-align: center;
   height: 30px;
   width: 200px;
   font-size: 1.1rem;
   cursor: pointer;
+  border: 2px solid #fff;
+  outline: none;
+  color: #fff;
+    outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+
+.select:focus{
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .boxBtnAgregar{
@@ -169,6 +206,8 @@
   background: transparent;
   cursor: pointer;
   font-size: 1.1rem;
+  color: white;
+  border-color: #fff;
 }
 
 .btnAgregar:hover{

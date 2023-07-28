@@ -27,7 +27,7 @@ function Update() {
   };
 
   return (
-    <Fade duration={2500}>
+    <Fade duration={1500}>
       <div className={styles.body}>
         <main className={styles.main}>
           <div className={styles.formIn}>

@@ -4,7 +4,7 @@
 }
 
 .body{
-  background-image: url("./../../Backiee/backiee-119980.jpg");
+  background-image: url("./../../Backiee/backiee-179984.jpg");
   background-position: center;
   background-size: cover;
    font: ‘Roboto’, Arial, Helvetica, sans-serif;
@@ -19,12 +19,14 @@
   display: none;
 }
 
+/*Barra de navegacion*/
+
 .header{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(237, 234, 234, 0.4);
-  backdrop-filter: blur(7px);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
 }
 
 .nav{
@@ -44,6 +46,7 @@
 
 .brandName:hover{
   scale: 1.04;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .nameLink{
@@ -69,16 +72,25 @@
 .nameInput{
   width: 100%;
   border-radius: 15px;
-  background:  rgba(237, 234, 234, 0.5);
+  background:  transparent;
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  border: none;
+  padding-right: 10px;
+  border: 2px solid  #fff;
+  border-color: #fff;
+  color: #fff;
+  outline: none;
+  transition: border 0.3s ease-in-out;
 }
 
 .nameInput::placeholder{
   color: white;
   font-weight: 400;
+}
+
+.nameInput:focus{
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .category{
@@ -90,12 +102,19 @@
   width: 100%;
   border-radius: 15px;
   height: 29px;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   font-size: 1rem;
   background:  rgba(237, 234, 234, 0.5);
-  border: none;
   padding-left: 5px;
+  background:  rgba(41, 0, 128,0.4);
+  border: 2px solid #fff;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.categorySelect:focus{
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .addBook{
@@ -107,17 +126,19 @@
 .addBookBtn{
   width: 100%;
   border-radius: 50%;
-  background-color:  rgba(237, 234, 234, 0.5);
+  background: transparent;
   height: 30px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.8rem;
   border: none;
-
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .addBookBtn:hover{
   scale: 1.04;
-  padding-top: 1.4px;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .addLink{
@@ -129,6 +150,7 @@
   color: white;
   font-size: 1.2rem;
   margin-right: 10px;
+  text-shadow: 0 0 5px #e3e4e5, 0 0 10px #e3e4e5
 }
 
 /*Cuerpo*/
@@ -139,77 +161,6 @@
   justify-content: center;
 }
 
-.section{
-  overflow: scroll;
-  width: 100%;
-  height: 100vh;
-}
-
-.section::-webkit-scrollbar{
-  display: none;
-}
-
-.table{
-  width: 100%;
-  border-radius: 15px;
-}
-
-
-.thead{
-  background: rgba(255,255,255,0.4);
-  backdrop-filter: blur(7px);
-  height: 40px;
-  text-align: center;
-  font-size: 1.4rem;
-  border-radius: 14px;
-}
-
-tbody{
-  background: rgba(255, 255, 255,0.2);
-  backdrop-filter: blur(7px);
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-tr:hover{
-  background-color: rgba(237, 234, 234, 0.4)
-}
-
-.btn{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btnModificar{
-  background:  rgba(237, 234, 234, 0.158);
-  width: 60%;
-  height: 25px;
-  border-radius: 14px;
-  font-size: 1rem;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-.btnModificar:hover{
-  scale: 1.04;
-}
-
-.btnEliminar{
-  background:  rgba(237, 14, 14, 0.45);
-  height: 25px;
-  width: 60%;
-  margin-top: 4px;
-  font-size: 1rem;
-  border-radius: 14px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.btnEliminar:hover{
-  scale: 1.04;
-}
-
 /*Cards*/
 
 .cardBox{
@@ -218,6 +169,11 @@ tr:hover{
   display: none;
   height: calc(100vh - 70px);
   overflow-y:auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(17rem,1fr));
+  gap: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .cardBox::-webkit-scrollbar{
@@ -225,10 +181,21 @@ tr:hover{
 }
 
 .card{
-  background: rgba(237, 234, 234, 0.4);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   border-radius: 18px;
   height: 300px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #fff;
+  box-shadow: inset 0 0 5px #a0a0a0, 0 0 8px #e3e4e5, 0 0 12px #fff;
+}
+
+.card:hover{
+  scale: 1.02;
+  background-color: rgba(247, 247, 247, 0.5);
 }
 
 .cardTitulo{
@@ -237,11 +204,13 @@ tr:hover{
   font-size: 1.4rem;
   text-align: center;
   font-style: italic;
+  font-weight: 600;
+  text-shadow: 0 0 5px #6c4675, 0 0 10px #fff, 0 0 20px #fff;
 }
 
 .cardAutor{
   margin-left: 20%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 1.2rem;
@@ -268,14 +237,16 @@ tr:hover{
 }
 
 .cardBtnModificar{
-    background:  rgba(237, 234, 234, 0.158);
+    background: transparent;
     width: 60%;
     height: 25px;
     border-radius: 14px;
     cursor: pointer;
-    margin-top: 30px;
     font-size: 1rem;
     font-weight: 100;
+    margin-top: 30px;
+    border-color: #fff;
+    color: #fff;
   }
   
 .cardBtnModificar:hover{
@@ -283,7 +254,7 @@ tr:hover{
 }
 
 .cardBtnEliminar{
-  background:  rgba(248, 4, 4, 0.454);
+  background:  rgba(209, 207, 209, 0.2);
   width: 60%;
   height: 25px;
   border-radius: 14px;
@@ -291,33 +262,20 @@ tr:hover{
   margin-top: 5px;
   margin-bottom: 15px;
   font-size: 1rem;
-    font-weight: 100;
+  font-weight: 100;
+  border-color: #fff;
+  background-color: rgba(250, 12, 12, 0.45);
+  color: #fff;
 }
 
 .cardBtnEliminar:hover{
   scale: 1.04;
 }
 
-
-
 @media (max-width: 768px){
-  .body{
-    height: 100%;
-  }
-
-  .addBook{
-    width: 140px;
-  }
-
-  .section{
-    display: none;
-  }
-
   .cardBox{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(15rem,1fr));
-    gap: 10px;
+    gap: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
   }
-
-  
 }

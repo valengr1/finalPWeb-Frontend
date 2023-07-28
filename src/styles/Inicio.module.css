@@ -4,11 +4,12 @@
 }
 
 .body{
-  background-image: url("./../../Backiee/backiee-119980.jpg");
+  background-image: url("./../../Backiee/backiee-179984.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
   font: ‘Roboto’, Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 .body:focus:not(:focus-visible){
@@ -20,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(253, 253, 253, 0.274);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(7px);
 }
 
@@ -48,6 +49,7 @@
   font-size: 1.4rem;
   margin-left: 10px;
   font-style: italic;
+  text-shadow: 0 0 5px #e3e4e5, 0 0 10px #e3e4e5, 0 0 20px #e3e4e5
 }
 
 .ulBtn{
@@ -61,6 +63,7 @@
 
 .ulBtn:hover{
   scale: 1.05;
+  text-shadow: 0 0 5px #e3e4e5, 0 0 10px #e3e4e5, 0 0 20px #e3e4e5
 }
 
 .main{
@@ -69,7 +72,7 @@
   align-items: center;
   justify-content: center;
   font-style: italic;
-  background-color: rgba(253, 253, 253, 0.274);
+  background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(7px);
   margin-top: 10px;
 }
@@ -87,6 +90,13 @@
 }
 
 .p{
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.pLibro{
   font-size: 1.6rem;
   margin-top: 10px;
   margin-left: 5px;
