@@ -1,7 +1,7 @@
-.body{
-  background: url(/Backiee/backiee-179984.jpg);
+.body {
+  background: url("/Backiee/backiee-248850.jpg");
   background-position: center;
-  background-size: cover  ;
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -9,8 +9,8 @@
   font: ‘Roboto’, Arial, Helvetica, sans-serif;
 }
 
-.main{
-  border-radius: 20px ;
+.main {
+  border-radius: 20px;
   width: 450px;
   border-radius: 20px;
   height: 500px;
@@ -18,16 +18,16 @@
   color: #fff;
 }
 
-.h2{
+.h2 {
   color: white;
   margin-top: 60px;
   font-size: 1.8rem;
   font-weight: 100;
   font-style: italic;
-  text-shadow: 0 0 5px #e3e4e5, 0 0 10px #e3e4e5, 0 0 20px #e3e4e5
+  text-shadow: 0 0 5px #e3e4e5, 0 0 10px #e3e4e5, 0 0 20px #e3e4e5;
 }
 
-.formIn{
+.formIn {
   height: 500px;
   display: flex;
   align-items: center;
@@ -36,16 +36,16 @@
   margin-left: 10px;
 }
 
-.form{
+.form {
   height: 100%;
-  width: 100% ;
+  width: 100%;
   background-color: rgba(159, 157, 157, 0.4);
   backdrop-filter: blur(7px);
   border-radius: 20px;
   box-shadow: inset 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff;
 }
 
-.tituloBox{
+.tituloBox {
   margin-top: 40px;
   margin-bottom: 10px;
   height: 40px;
@@ -54,13 +54,13 @@
   justify-content: center;
 }
 
-.tituloLabel{
+.tituloLabel {
   position: absolute;
   margin-right: 200px;
   font-size: 1.4rem;
 }
 
-.tituloInput{
+.tituloInput {
   position: absolute;
   margin-left: 110px;
   border-radius: 14px;
@@ -75,11 +75,11 @@
   transition: border 3px ease-in-out;
 }
 
-.tituloInput:focus{
+.tituloInput:focus {
   box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
-.autorBox{
+.autorBox {
   margin-bottom: 10px;
   height: 40px;
   display: flex;
@@ -87,14 +87,14 @@
   justify-content: center;
 }
 
-.autorLabel{
+.autorLabel {
   font-size: 18px;
   position: absolute;
   margin-right: 200px;
   font-size: 1.4rem;
 }
 
-.autorInput{
+.autorInput {
   position: absolute;
   margin-left: 110px;
   border-radius: 14px;
@@ -109,11 +109,11 @@
   transition: border 3px ease-in-out;
 }
 
-.autorInput:focus{
+.autorInput:focus {
   box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
-.edicionBox{
+.edicionBox {
   margin-bottom: 10px;
   height: 40px;
   display: flex;
@@ -121,13 +121,13 @@
   justify-content: center;
 }
 
-.edicionLabel{
+.edicionLabel {
   font-size: 1.4rem;
   position: absolute;
   margin-right: 200px;
 }
 
-.edicionInput{
+.edicionInput {
   position: absolute;
   margin-left: 110px;
   border-radius: 14px;
@@ -142,11 +142,11 @@
   transition: border 3px ease-in-out;
 }
 
-.edicionInput:focus{
+.edicionInput:focus {
   box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
-.categoriaBox{
+.categoriaBox {
   margin-bottom: 10px;
   height: 40px;
   display: flex;
@@ -154,18 +154,18 @@
   justify-content: center;
 }
 
-.categoriaLabel{
+.categoriaLabel {
   margin-right: 20px;
   font-size: 1.4rem;
   position: absolute;
   margin-right: 200px;
 }
 
-.select{
+.select {
   position: absolute;
   margin-left: 110px;
   border-radius: 14px;
-  background: rgba(41, 0, 128,0.6);
+  background: rgba(41, 0, 128, 0.6);
   text-align: center;
   height: 28px;
   width: 200px;
@@ -177,11 +177,11 @@
   transition: border 3px ease-in-out;
 }
 
-.select:focus{
+.select:focus {
   box-shadow: inset 0 0 5px #fff, 0 0 10px #fff;
 }
 
-.boxBtnAgregar{
+.boxBtnAgregar {
   margin-bottom: 10px;
   height: 40px;
   display: flex;
@@ -191,7 +191,7 @@
   gap: 10px;
 }
 
-.btnAgregar{
+.btnAgregar {
   width: 150px;
   border-radius: 27px;
   background-color: transparent;
@@ -202,11 +202,11 @@
   border-color: #fff;
 }
 
-.btnAgregar:hover{
+.btnAgregar:hover {
   scale: 1.04;
 }
 
-.addLink{
+.addLink {
   color: white;
   text-decoration: none;
 }
