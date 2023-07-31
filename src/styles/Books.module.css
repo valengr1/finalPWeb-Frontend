@@ -194,6 +194,12 @@
 
 .card:hover {
   scale: 1.04;
+  .cardTitulo{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  }
+  .cardAutor{
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  }
 }
 
 .cardTitulo {
@@ -248,6 +254,7 @@
 
 .cardBtnModificar:hover {
   scale: 1.04;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
 .cardBtnEliminar {
@@ -267,6 +274,7 @@
 
 .cardBtnEliminar:hover {
   scale: 1.04;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff;
 }
 
 @media (max-width: 768px) {
