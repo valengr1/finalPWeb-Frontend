@@ -1,10 +1,17 @@
 import Swal from "sweetalert2";
 import { updateBook } from "../services/updateBook";
 
-export async function fieldVerificationUpdate(book, bookId, navigate) {
+export function fieldVerificationUpdate(book, bookId, navigate) {
   if (!book.autor || !book.edicion || !book.idCategoria || !book.titulo) {
     Swal.fire({
       title: "Todos los campos deben estar completos",
+      icon: "warning",
+      confirmButtonColor: "#3085d6",
+      confirmButtonText: "Aceptar",
+    });
+  } else if (book.edicion <= 0) {
+    Swal.fire({
+      title: "El valor del campo edicion no es valido",
       icon: "warning",
       confirmButtonColor: "#3085d6",
       confirmButtonText: "Aceptar",

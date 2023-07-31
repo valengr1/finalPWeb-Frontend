@@ -5,6 +5,7 @@ export function bookFilters(
   books
 ) {
   var results = [];
+
   if (!searchByTitle && !searchByCategory && !searchByAuthor) {
     results = books;
   } else if (searchByTitle) {
