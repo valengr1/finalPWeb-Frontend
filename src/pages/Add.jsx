@@ -3,7 +3,7 @@ import styles from "./../styles/Add.module.css";
 import { Link, useNavigate } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
 import BooksCategories from "../hooks/BooksCategories";
-import { fieldVerificationAdd } from "../helpers/fieldVerificationAdd";
+import { fieldVerificationAdd } from "../helpers/bookHelpers";
 
 function Add() {
   const navigate = useNavigate();

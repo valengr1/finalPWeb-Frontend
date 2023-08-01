@@ -4,7 +4,7 @@
 }
 
 .body {
-  background-image: url("./../../Backiee/backiee-248850.jpg");
+  background-image: url("./../../Backiee/backiee-179984.jpg");
   background-position: center;
   background-size: cover;
   font: ‘Roboto’, Arial, Helvetica, sans-serif;
@@ -181,7 +181,7 @@
 
 .card {
   background-color: rgba(128, 126, 126, 0.4);
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(7px);
   border-radius: 18px;
   height: 300px;
   cursor: pointer;
@@ -189,7 +189,7 @@
   margin-left: 10px;
   margin-right: 10px;
   color: #fff;
-  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #8417ff;
+  box-shadow: inset 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff;
 }
 
 .card:hover {

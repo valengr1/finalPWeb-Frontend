@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./../styles/Update.module.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Fade } from "react-awesome-reveal";
-import { fieldVerificationUpdate } from "../helpers/fieldVerificationUpdate";
+import { fieldVerificationUpdate } from "../helpers/bookHelpers";
 import BooksCategories from "../hooks/BooksCategories";
 
 function Update() {

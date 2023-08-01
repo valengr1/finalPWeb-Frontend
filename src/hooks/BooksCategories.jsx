@@ -7,15 +7,25 @@ function BooksCategories() {
   const [isUpdate, setIsUpdate] = useState(false);
 
   useEffect(() => {
-    const getCategories = async () => {
-      const results = await axios.get(
-        "http://localhost:9000/api/v1/categories"
-      );
-      setCategories(results.data);
+    const getCategories = () => {
+      axios
+        .get("http://localhost:9000/api/v1/categories")
+        .then((res) => {
+          setCategories(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     };
-    const getBooks = async () => {
-      const results = await axios.get("http://localhost:9000/api/v1/books");
-      setBooks(results.data);
+    const getBooks = () => {
+      axios
+        .get("http://localhost:9000/api/v1/books")
+        .then((res) => {
+          setBooks(res.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
     };
     getCategories();
     getBooks();

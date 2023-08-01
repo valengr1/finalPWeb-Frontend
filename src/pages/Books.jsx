@@ -2,9 +2,8 @@ import { Link } from "react-router-dom";
 import styles from "./../styles/Books.module.css";
 import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { bookFilters } from "../helpers/filterBooks";
 import BooksCategories from "../hooks/BooksCategories";
-import { elimination } from "../helpers/elimination";
+import { elimination, bookFilters } from "../helpers/bookHelpers";
 
 function Books() {
   const [searchByTitle, setSearchByTitle] = useState("");
